@@ -1,57 +1,32 @@
 # Dependencies
 node_modules/
 
-# Expo temporary & cache directories
+# Expo files
 .expo/
 dist/
 web-build/
 
-# Native build artifacts (if prebuild is run locally)
+# Native builds
 android/
 ios/
-
-# Standalone build outputs
 *.apk
 *.aab
-
-# Environment & Secret files
-.env
-.env.local
-.env.*.local
-.env.development
-.env.test
-.env.production
-
-# Keystores & Signing Certificates
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
-*.orig.*
 *.keystore
+*.jks
+
+# Environment variables
+.env
+.env.*
 
 # Logs
-logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-lerna-debug.log*
 
-# OS & Editor files
+# OS / Editor files
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
-desktop.ini
-
-# IDE & Tool configs
 .vscode/
 .idea/
-*.sublime-project
-*.sublime-workspace
 .sf/

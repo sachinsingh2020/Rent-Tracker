@@ -1,50 +1,26 @@
 # Dependencies
 node_modules/
 
-# Environment Variables & Secrets (CRITICAL: Never commit credentials)
+# Environment variables
 .env
-.env.local
-.env.*.local
-.env.development
-.env.test
-.env.production
+.env.*
 
 # Logs
-logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-lerna-debug.log*
-pnpm-debug.log*
 
-# Runtime data & temp files
-pids/
+# Runtime files
+pids
 *.pid
 *.seed
 *.pid.lock
 uploads/
-tmp/
-temp/
 
-# Testing & Coverage
-coverage/
-*.lcov
-.nyc_output/
-
-# Editor & OS files
+# OS / Editor files
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
-desktop.ini
-
-# IDEs & Tools
 .vscode/
 .idea/
-*.sublime-project
-*.sublime-workspace
 .sf/
