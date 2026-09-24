@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "Rent & Electricity Tracker",
+    "slug": "rent-tracker",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.renttracker.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "RentTracker needs camera access to take meter photos for electricity billing proof.",
+        "NSPhotoLibraryUsageDescription": "RentTracker needs photo library access to upload meter reading photos."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.renttracker.app",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "RentTracker needs access to your photos to attach electricity meter proofs.",
+          "cameraPermission": "RentTracker needs access to your camera to capture electricity meter proofs."
+        }
+      ]
+    ]
+  }
+}
